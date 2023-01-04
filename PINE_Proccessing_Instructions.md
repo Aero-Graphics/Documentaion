@@ -54,7 +54,7 @@ Once all the values are set select the `Make EO` option and a new EO file of the
 
 Be warned that if the file already exists in the tif Directory it will be overwritten.
 
-### 4) Generate TFW files for Compressed Images
+### 4) Generate TFW files for the Compressed Images
 
 ### 5) Settup Image Footprints
 
