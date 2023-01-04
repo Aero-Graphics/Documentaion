@@ -1,7 +1,5 @@
 # PINE Processing Instruction and Help page 2023
 
-## Install Plugin
-
 ## Processing Steps
 
 ### 1) Check EO and Image Files and Names
@@ -31,7 +29,7 @@ To do this simply make a copy of <To be Defined>.qgz into a folder of your usern
 
 #### 3b) Use the EO_Linking tab in the PINE processing plugin to format and link your original EO file for processing.
 
-Open Qgis and, if you have not already, install the PINE Processing plugin (see [Instalation](README.md#install))
+Open Qgis and, if you have not already, install the PINE Processing plugin (see [Instalation](AGI_PINE_Proccessing_README.md#install))
 
 ### 4) Generate TFW files for Compressed Images
 
