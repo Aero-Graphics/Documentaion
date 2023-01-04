@@ -56,6 +56,7 @@ Be warned that if the file already exists in the tif Directory it will be overwr
 
 ### 4) Generate TFW files for the Compressed Images
 
+
 ### 5) Settup Image Footprints
 
 ### 6) Select Image Sets on Easments and Send to Processing
