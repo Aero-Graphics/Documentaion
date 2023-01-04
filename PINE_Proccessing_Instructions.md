@@ -35,10 +35,10 @@ If the EO_file already has file names then select the `Reformat Existing Links` 
 
 * **Original EO:** `P:\Path\To\EO\File` This should not be in the tif Directory or it will be overwritten.
 * **Tif Directory:** `P:\Path\To\Tif\Image\Folder`
-* **Skip Lines:** Number of lines to skip before actual data starts.
 
 ##### All Columns are 0 based so the first column is 0 and the second is 1 and so on.
 
+* **Skip Lines:** Number of lines to skip before actual data starts.
 * **Exposure/Name Column:** Column number for the Names/Exposure numbers.
 * **Easting Column:** Column number for the Easting Value.
 * **Northing Column:** Column number for the Northing Value.
@@ -56,13 +56,39 @@ Be warned that if the file already exists in the tif Directory it will be overwr
 
 ### 4) Generate TFW files for the Compressed Images
 
+In the EO_TFW_GEN tab you can create `.tfw` files for the images. Fill in the Values or load in an existing settings file to start.
 
-### 5) Settup Image Footprints
+* **Load Settings:** `P:\Path\To\settings.txt` This file is generated when the tfw generator is run and can be used to reload previous settings.
+* **Tif Directory:** `P:\Path\To\Tif\Image\Folder`
+* **Original EO:** `P:\Path\To\EO\File` This should be the one made in step 3.
 
-### 6) Select Image Sets on Easments and Send to Processing
+* **Focal Length(mm):** This value is the focal length in millimeters and will be set automatically from the database if left at `0.00` but can be set to override the database if needed.
+* **Original EO:** This value is the Pixel Size in millimeters and will be set automatically from the database if left at `0.00` but can be set to override the database if needed.
+
+##### These values should all auto set to the correct values but may need to be edited in some cases. All Columns are 0 based so the first column is 0 and the second is 1 and so on.
+
+* **Skip Lines:** Number of lines to skip before actual data starts.
+* **Name:** Column number for the Names/Exposure numbers.
+* **Easting Column:** Column number for the Easting Value.
+* **Northing Column:** Column number for the Northing Value.
+* **Elevation Column:** Column number for the Elevation Value.
+* **Omega Column:** Column number for the Omega Value.
+* **Phi Column:** Column number for the Phi Value.
+* **Kappa Column:** Column number for the Kappa Value.
+* **Latitude Column:** Column number for the Latitude Value.
+* **Longitude Column:** Column number for the Longitude Value.
+* **Full Name:** Select this option if the EO file has the full path names and not just the file names.
+* **Degrees or Angle:** This selection is to set the angle type for the heading. 'Degrees' indicates that East is 0 degrees and North is 90. 'Angle' indicates that North is 0 degrees and East is 90. Both are in degrees, if your angles are in radians you will need to convert them to degrees.
+* **Meters or Feet:** This selection is to set the units of the elevation values. The elevation should be above sea-level.
+
+Once all settings are set you can select either `Generate Settings` witch will only make a settings.txt file in the tif Directory or `Create TFW` witch will make both the settings.txt and a tfw file for each `.tif` file in the tif Directory. Any existing tfw files will be overwritten when this is run.
+
+### 5) Setup Image Footprints
+
+### 6) Select Image Sets on Easements and Send to Processing
 
 ### 7) Fix Processing Offsets and Errors
 
-### 8) QC Final Cliped Easment Images
+### 8) QC Final Clipped Easement Images
 
 # FAQ
