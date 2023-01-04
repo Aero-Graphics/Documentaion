@@ -29,7 +29,30 @@ To do this simply make a copy of <To be Defined>.qgz into a folder of your usern
 
 #### 3b) Use the EO_Linking tab in the PINE processing plugin to format and link your original EO file for processing.
 
-Open Qgis and, if you have not already, install the PINE Processing plugin (see [Instalation](AGI_PINE_Proccessing_README.md#install))
+Open Qgis and, if you have not already, install the PINE Processing plugin (see [Instalation](AGI_PINE_Proccessing_README.md#install)). Once you have the plugin installed and open go to the EO_Linking tab and fill in the values.
+
+If the EO_file already has file names then select the `Reformat Existing Links` option. If the links already have the `.tif` extention then select the `Files have .tif In their names in existing EO file` option as well.
+
+* **Original EO:** `P:\Path\To\EO\File` This should not be in the tif Directory or it will be overwritten.
+* **Tif Directory:** `P:\Path\To\Tif\Image\Folder`
+* **Skip Lines:** Number of lines to skip before actual data starts.
+
+##### All Columns are 0 based so the first column is 0 and the second is 1 and so on.
+
+* **Exposure/Name Column:** Column number for the Names/Exposure numbers.
+* **Easting Column:** Column number for the Easting Value.
+* **Northing Column:** Column number for the Northing Value.
+* **Elevation Column:** Column number for the Elevation Value.
+* **Omega Column:** Column number for the Omega Value.
+* **Phi Column:** Column number for the Phi Value.
+* **Kappa Column:** Column number for the Kappa Value.
+* **Latitude Column:** Column number for the Latitude Value.
+* **Longitude Column:** Column number for the Longitude Value.
+* **Add Full Path:** Select this option if you want the full file path for the images to be in the EO file.
+
+Once all the values are set select the `Make EO` option and a new EO file of the same name as the original will be made in the tif Directory.
+
+Be warned that if the file already exists in the tif Directory it will be overwritten.
 
 ### 4) Generate TFW files for Compressed Images
 
